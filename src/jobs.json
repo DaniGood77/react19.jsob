@@ -1373,20 +1373,6 @@
       }
     },
     {
-      "id": "99",
-      "title": "React Performance Engineer",
-      "type": "Remote",
-      "description": "We are seeking a talented React Performance Engineer to join our team in Remote. The ideal candidate will have strong experience with HTML5, CSS3, React, and responsive UI/UX implementation. You will collaborate with cross-functional teams to build scalable, responsive, and user-friendly web applications.",
-      "location": "Remote",
-      "salary": "$110K - $125K",
-      "company": {
-        "name": "Apex Web Studio",
-        "description": "Apex Web Studio is a creative engineering agency specializing in interactive media and front-end development. We help ambitious brands stand out with modern web experiences.",
-        "contactEmail": "contact@apexwebstudio.com",
-        "contactPhone": "555-555-1099"
-      }
-    },
-    {
       "id": "100",
       "title": "Web Application Developer",
       "type": "Full-Time",
@@ -1400,5 +1386,6 @@
         "contactPhone": "555-555-1100"
       }
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

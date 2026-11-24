@@ -10,7 +10,7 @@ const JobListings = ({ isHome }) => {
   useEffect(() => {
     const apiUrl = isHome
       ? '/api/jobs?_page=1&_per_page=3'
-      : '/api/jobs?_page=1&_per_page=6';
+      : '/api/jobs';
 
     const fetchJobs = async () => {
       setCargando(true);
@@ -24,7 +24,12 @@ const JobListings = ({ isHome }) => {
 
         const data = await resultado.json();
 
-        setJobs(data.data);
+        if (isHome) {
+          setJobs(data.data);
+        } else {
+          setJobs(data.reverse());
+        }
+
       } catch (error) {
         console.log('Error trayendo datos:', error);
       } finally {
